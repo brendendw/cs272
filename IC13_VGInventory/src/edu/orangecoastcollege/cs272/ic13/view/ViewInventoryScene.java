@@ -1,6 +1,7 @@
 package edu.orangecoastcollege.cs272.ic13.view;
 
 import java.net.URL;
+
 import java.util.ResourceBundle;
 
 import edu.orangecoastcollege.cs272.ic13.controller.Controller;
@@ -22,14 +23,17 @@ public class ViewInventoryScene implements Initializable {
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		//TODO: Complete this method
+
+		userLabel.setText(controller.getCurrentUser().getName());
+		userVideoGamesLV.setItems(controller.getGamesForCurrentUser());
+		
 	}
 	
 
 	@FXML
 	public Object backToAllGames()
 	{
-		//TODO: Complete this method
+		ViewNavigator.loadScene("Video Games List", ViewNavigator.VIDEO_GAME_LIST_SCENE);
 		return this;
 	}
 }

@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.ic13.view.VideoGamesListScene">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.ic13.view.VideoGamesListScene">
    <top>
       <GridPane vgap="10.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -43,8 +43,8 @@
    <bottom>
       <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="50.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Add Game to Inventory" />
-            <Button mnemonicParsing="false" text="View Inventory" />
+            <Button mnemonicParsing="false" onAction="#addGameToInventory" text="Add Game to Inventory" />
+            <Button mnemonicParsing="false" onAction="#viewInventory" text="View Inventory" />
          </children>
       </HBox>
    </bottom>
